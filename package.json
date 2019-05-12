@@ -26,7 +26,6 @@
     "test": "nyc --reporter=text-summary --reporter=html lb-mocha --allow-console-logs \"dist/__tests__\"",
     "prestart": "npm run build",
     "start": "node . --server=http://34.95.74.250 --token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiIxZTllZTY2NC1jZWYzLTQ4MmYtYTE5Ny1iNDA0OWNkNDYwMmYiLCJ0YXNrSWQiOiI0N2M2YWVlMy1lNTAxLTRjMTAtYTJmNy0xZDU4YmNmMDEwNmUiLCJpYXQiOjE1NTc0MzI2MjksImV4cCI6MTU4ODk2ODYyOX0.2wkc5BdjxcdX_38EGKeOxJwgtMWxyjI_v5U_F7K2q0I",
-    "prepublishOnly": "npm run test",
     "coverage": "nyc report --reporter=text-lcov | coveralls"
   },
   "repository": {
