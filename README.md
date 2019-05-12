@@ -3,7 +3,7 @@
 ### Install
 
 ```
-npm i g ws-flare-cli
+npm i -g ws-flare-cli
 ```
 
 ### Usage
