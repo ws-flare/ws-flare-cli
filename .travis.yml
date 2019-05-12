@@ -6,7 +6,6 @@ install:
 script:
 - yarn test
 - yarn build
-after_success: yarn coverage
 deploy:
   provider: npm
   email: david.ahern26@gmail.com

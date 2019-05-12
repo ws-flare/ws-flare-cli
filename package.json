@@ -1,6 +1,6 @@
 {
   "name": "ws-flare-cli",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "ws-flare-cli",
   "keywords": [
     "loopback-application",
@@ -10,6 +10,14 @@
   "engines": {
     "node": ">=8.9"
   },
+  "files": [
+    "README.md",
+    "index.js",
+    "index.d.ts",
+    "dist",
+    "src",
+    "!*/__tests__"
+  ],
   "scripts": {
     "build:apidocs": "lb-apidocs",
     "build": "lb-tsc es2017 --outDir dist",
@@ -33,14 +41,6 @@
   },
   "author": "",
   "license": "",
-  "files": [
-    "README.md",
-    "index.js",
-    "index.d.ts",
-    "dist",
-    "src",
-    "!*/__tests__"
-  ],
   "bin": {
     "ws-flare-cli": "./index.js"
   },
