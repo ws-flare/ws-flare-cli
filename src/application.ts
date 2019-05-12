@@ -11,6 +11,9 @@ import { ArgsService } from './services/args.service';
 import { TasksService } from './services/tasks.service';
 import { JobsService } from './services/jobs.service';
 
+/**
+ * Setup ws-flare-cli configuration and dependency injection
+ */
 export class WsFlareCliApplication extends Application {
     constructor(options: ApplicationConfig = {}) {
         super(options);

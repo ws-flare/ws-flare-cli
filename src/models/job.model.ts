@@ -1,3 +1,6 @@
+/**
+ * Interface which describes features of a job
+ */
 export interface Job {
     id: string;
     createdAt: string;

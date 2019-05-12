@@ -5,6 +5,9 @@ import { TasksService } from './services/tasks.service';
 import { Job } from './models/job.model';
 import { JobsService } from './services/jobs.service';
 
+/**
+ * Runs the ws-flare-cli job
+ */
 export class Cli extends Context implements Server {
 
     @inject('logger')
@@ -26,6 +29,9 @@ export class Cli extends Context implements Server {
         return true;
     }
 
+    /**
+     * Runs a task on the ws-flare-cli platform to test a websocket server
+     */
     async start() {
         this.logger.info('Process started');
 
