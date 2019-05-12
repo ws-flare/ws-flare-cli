@@ -1,10 +1,17 @@
 language: node_js
 node_js:
-  - '8'
+- '8'
 install:
-  - yarn --ignore-engines
+- yarn --ignore-engines
 script:
-  - yarn test
-  - yarn build
-
+- yarn test
+- yarn build
 after_success: yarn coverage
+deploy:
+  provider: npm
+  email: david.ahern26@gmail.com
+  api_key:
+    secure: gGY4sbbW6/3VBPYsY93VrApscmHx827tEIkyYeZFcEoGxfxIEN5RZTC2U5PAGeJyUTtm/uSUkhDrI+S7LVjzd2jFlIYSbsJqfmmK9PjyVEbyjogcrofj53Gb28bbowctljr2RJeEbMnABcD1CEIPwmNguXUazS6w3/f+rb8Z7L12fPMPz0Kstv/Z0l696pS3+q/p8bOOJubvodwr6ExA9ax6F/TWzMGrTajNn4B/g8dBs/iBP9CiDv5ESQFiZBA9lr0XJeymt10qJEFmk4x/QgDvhj4nKH2Ji3qpChaWwoHgDLysOPtlsXB5xnbNnfnBuZP/+gprPK1bv5lWcRLK/1FKL68D+6LYYYNDuMeJ7ehf2kiEW/aGo40U1YrCRz+FbvXnhmtchKwBa2zDlSSVOqYFlS0OdVedUKgOVrTUnozEaGPUdsSAQlDfsGNJaxz2Ka5JL6eVh7qrAODbQdUGTADcOQpENTjyTRUhYom6dIIsrZfPqxZevuADTAcxTlV2suvlxdkoVwsC6WIx48fzVWhErFKZaIZZh1tlFZFiW1whCAbQsh97nTZuoKcnSmFVi1SgT0bvz+BVfHB8DTZGQ0/hpAptqVDbZEauI+lCi8YoWUgn9gvhdgxCA5C9igSr2An888aaCXxjpYZ3od1rhVBQ7lgNlaFOcLZT6hsGcPw=
+  on:
+    repo: ws-flare/ws-flare-cli
+    branch: master
