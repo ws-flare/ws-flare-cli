@@ -1,3 +1,5 @@
+#!/usr/bin/env node
+
 const application = require('./dist');
 
 module.exports = application;
