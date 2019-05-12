@@ -41,6 +41,9 @@
     "src",
     "!*/__tests__"
   ],
+  "bin": {
+    "ws-flare-cli": "./index.js"
+  },
   "dependencies": {
     "@loopback/boot": "^1.2.3",
     "@loopback/context": "^1.12.0",
